@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220719 08:34:11.028" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220719 09:01:18.517" rpa="false" schemaversion="3">
 <suite id="s1" name="Signup" source="C:\Users\User\Documents\dev\GravidadeZERO\getgeeks\project\tests\Signup.robot">
 <test id="s1-t1" name="Register a new user" line="10">
 <kw name="Start Session" library="Base" type="SETUP">
@@ -10,34 +10,34 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20220719 08:34:11.892" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 500.0, "tracesDir": "C:\\Users\\User\\Documents\\dev\\GravidadeZERO\\getgeeks\\project\\logs\\browser\\traces\\e0d924b1-18b8-4259-b3b0-9d0a7063474c"}</msg>
-<msg timestamp="20220719 08:34:12.220" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":500,"tracesDir":"C:\\Users\\User\\Documents\\dev\\GravidadeZERO\\getgeeks\\project\\logs\\browser\\traces\\e0d924b1-18b8-4259-b3b0-9d0a7063474c"}</msg>
-<status status="PASS" starttime="20220719 08:34:11.892" endtime="20220719 08:34:12.220"/>
+<msg timestamp="20220719 09:01:19.405" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 500.0, "tracesDir": "C:\\Users\\User\\Documents\\dev\\GravidadeZERO\\getgeeks\\project\\logs\\browser\\traces\\8aa4631a-bfbd-4bcc-8e52-2d1afbfbbdc1"}</msg>
+<msg timestamp="20220719 09:01:19.765" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":500,"tracesDir":"C:\\Users\\User\\Documents\\dev\\GravidadeZERO\\getgeeks\\project\\logs\\browser\\traces\\8aa4631a-bfbd-4bcc-8e52-2d1afbfbbdc1"}</msg>
+<status status="PASS" starttime="20220719 09:01:19.405" endtime="20220719 09:01:19.765"/>
 </kw>
 <kw name="New Page" library="Browser">
-<arg>https://getgeeks-matheus.herokuapp.com</arg>
+<arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220719 08:34:14.925" level="INFO">Successfully initialized new page object and opened url: https://getgeeks-matheus.herokuapp.com</msg>
-<msg timestamp="20220719 08:34:14.925" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220719 08:34:12.220" endtime="20220719 08:34:14.925"/>
+<msg timestamp="20220719 09:01:22.444" level="INFO">Successfully initialized new page object and opened url: https://getgeeks-matheus.herokuapp.com</msg>
+<msg timestamp="20220719 09:01:22.444" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220719 09:01:19.765" endtime="20220719 09:01:22.444"/>
 </kw>
-<status status="PASS" starttime="20220719 08:34:11.892" endtime="20220719 08:34:14.925"/>
+<status status="PASS" starttime="20220719 09:01:19.405" endtime="20220719 09:01:22.444"/>
 </kw>
 <kw name="Factory User" library="Users">
 <var>${user}</var>
-<msg timestamp="20220719 08:34:14.927" level="INFO">${user} = {'name': 'Randy', 'lastname': 'Harris', 'email': 'leonardsusan@yahoo.com', 'password': 'ogelogel1'}</msg>
-<status status="PASS" starttime="20220719 08:34:14.926" endtime="20220719 08:34:14.927"/>
+<msg timestamp="20220719 09:01:22.445" level="INFO">${user} = {'name': 'Misty', 'lastname': 'Mcdaniel', 'email': 'charles94@yahoo.com', 'password': 'ogelogel1'}</msg>
+<status status="PASS" starttime="20220719 09:01:22.444" endtime="20220719 09:01:22.445"/>
 </kw>
 <kw name="Go To Signup Form" library="Actions">
 <kw name="Go To" library="Browser">
-<arg>https://getgeeks-matheus.herokuapp.com/signup</arg>
+<arg>${BASE_URL}/signup</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<msg timestamp="20220719 08:34:16.229" level="INFO">Successfully opened URL https://getgeeks-matheus.herokuapp.com/signup</msg>
-<status status="PASS" starttime="20220719 08:34:14.927" endtime="20220719 08:34:16.229"/>
+<msg timestamp="20220719 09:01:23.774" level="INFO">Successfully opened URL https://getgeeks-matheus.herokuapp.com/signup</msg>
+<status status="PASS" starttime="20220719 09:01:22.445" endtime="20220719 09:01:23.774"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.signup-form</arg>
@@ -46,10 +46,10 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220719 08:34:16.251" level="INFO">Waited for Element with selector css=.signup-form at state visible</msg>
-<status status="PASS" starttime="20220719 08:34:16.229" endtime="20220719 08:34:16.252"/>
+<msg timestamp="20220719 09:01:23.798" level="INFO">Waited for Element with selector css=.signup-form at state visible</msg>
+<status status="PASS" starttime="20220719 09:01:23.774" endtime="20220719 09:01:23.798"/>
 </kw>
-<status status="PASS" starttime="20220719 08:34:14.927" endtime="20220719 08:34:16.252"/>
+<status status="PASS" starttime="20220719 09:01:22.445" endtime="20220719 09:01:23.799"/>
 </kw>
 <kw name="Fill Signup Form" library="Actions">
 <arg>${user}</arg>
@@ -59,8 +59,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220719 08:34:16.253" level="INFO">Fills the text 'Randy' in the given field.</msg>
-<status status="PASS" starttime="20220719 08:34:16.252" endtime="20220719 08:34:16.778"/>
+<msg timestamp="20220719 09:01:23.799" level="INFO">Fills the text 'Misty' in the given field.</msg>
+<status status="PASS" starttime="20220719 09:01:23.799" endtime="20220719 09:01:24.324"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=lastname</arg>
@@ -68,8 +68,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220719 08:34:16.779" level="INFO">Fills the text 'Harris' in the given field.</msg>
-<status status="PASS" starttime="20220719 08:34:16.778" endtime="20220719 08:34:17.292"/>
+<msg timestamp="20220719 09:01:24.325" level="INFO">Fills the text 'Mcdaniel' in the given field.</msg>
+<status status="PASS" starttime="20220719 09:01:24.324" endtime="20220719 09:01:24.840"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=email</arg>
@@ -77,8 +77,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220719 08:34:17.293" level="INFO">Fills the text 'leonardsusan@yahoo.com' in the given field.</msg>
-<status status="PASS" starttime="20220719 08:34:17.293" endtime="20220719 08:34:17.811"/>
+<msg timestamp="20220719 09:01:24.841" level="INFO">Fills the text 'charles94@yahoo.com' in the given field.</msg>
+<status status="PASS" starttime="20220719 09:01:24.840" endtime="20220719 09:01:25.365"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=password</arg>
@@ -86,10 +86,10 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220719 08:34:17.812" level="INFO">Fills the text 'ogelogel1' in the given field.</msg>
-<status status="PASS" starttime="20220719 08:34:17.812" endtime="20220719 08:34:18.333"/>
+<msg timestamp="20220719 09:01:25.366" level="INFO">Fills the text 'ogelogel1' in the given field.</msg>
+<status status="PASS" starttime="20220719 09:01:25.365" endtime="20220719 09:01:25.890"/>
 </kw>
-<status status="PASS" starttime="20220719 08:34:16.252" endtime="20220719 08:34:18.334"/>
+<status status="PASS" starttime="20220719 09:01:23.799" endtime="20220719 09:01:25.890"/>
 </kw>
 <kw name="Submit Signup Form" library="Actions">
 <kw name="Click" library="Browser">
@@ -97,17 +97,17 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220719 08:34:18.334" endtime="20220719 08:34:18.876"/>
+<status status="PASS" starttime="20220719 09:01:25.891" endtime="20220719 09:01:26.446"/>
 </kw>
-<status status="PASS" starttime="20220719 08:34:18.334" endtime="20220719 08:34:18.876"/>
+<status status="PASS" starttime="20220719 09:01:25.891" endtime="20220719 09:01:26.446"/>
 </kw>
 <kw name="User Should Be Registered" library="Actions">
 <kw name="Set Variable" library="BuiltIn">
 <var>${expected_message}</var>
 <arg>css=p &gt;&gt; text=Agora você faz parte da Getgeeks. Tenha uma ótima experiência.</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220719 08:34:18.877" level="INFO">${expected_message} = css=p &gt;&gt; text=Agora você faz parte da Getgeeks. Tenha uma ótima experiência.</msg>
-<status status="PASS" starttime="20220719 08:34:18.877" endtime="20220719 08:34:18.877"/>
+<msg timestamp="20220719 09:01:26.447" level="INFO">${expected_message} = css=p &gt;&gt; text=Agora você faz parte da Getgeeks. Tenha uma ótima experiência.</msg>
+<status status="PASS" starttime="20220719 09:01:26.447" endtime="20220719 09:01:26.447"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>${expected_message}</arg>
@@ -116,24 +116,24 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220719 08:34:19.421" level="INFO">Waited for Element with selector css=p &gt;&gt; text=Agora você faz parte da Getgeeks. Tenha uma ótima experiência. at state visible</msg>
-<status status="PASS" starttime="20220719 08:34:18.877" endtime="20220719 08:34:19.421"/>
+<msg timestamp="20220719 09:01:26.993" level="INFO">Waited for Element with selector css=p &gt;&gt; text=Agora você faz parte da Getgeeks. Tenha uma ótima experiência. at state visible</msg>
+<status status="PASS" starttime="20220719 09:01:26.447" endtime="20220719 09:01:26.993"/>
 </kw>
-<status status="PASS" starttime="20220719 08:34:18.877" endtime="20220719 08:34:19.421"/>
+<status status="PASS" starttime="20220719 09:01:26.446" endtime="20220719 09:01:26.994"/>
 </kw>
 <kw name="Finish Session" library="Base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20220719 08:34:19.506" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220719 08:34:19.422" endtime="20220719 08:34:19.506"/>
+<msg timestamp="20220719 09:01:27.091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220719 09:01:26.994" endtime="20220719 09:01:27.092"/>
 </kw>
-<status status="PASS" starttime="20220719 08:34:19.422" endtime="20220719 08:34:19.506"/>
+<status status="PASS" starttime="20220719 09:01:26.994" endtime="20220719 09:01:27.092"/>
 </kw>
-<status status="PASS" starttime="20220719 08:34:11.889" endtime="20220719 08:34:19.507"/>
+<status status="PASS" starttime="20220719 09:01:19.402" endtime="20220719 09:01:27.092"/>
 </test>
 <doc>Signup Test Suite</doc>
-<status status="PASS" starttime="20220719 08:34:11.030" endtime="20220719 08:34:19.556"/>
+<status status="PASS" starttime="20220719 09:01:18.518" endtime="20220719 09:01:27.139"/>
 </suite>
 <statistics>
 <total>
