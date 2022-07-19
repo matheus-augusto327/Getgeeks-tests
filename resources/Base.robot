@@ -2,6 +2,9 @@
 Documentation   Base Test
 
 Library         Browser
+Library         factories/Users.py
+
+Resource        Actions.robot
 
 *Keywords*
 Start Session
