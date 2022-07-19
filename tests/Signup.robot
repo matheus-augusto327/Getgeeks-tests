@@ -9,8 +9,18 @@ Test Teardown   Finish Session
 *Test Cases*
 Register a new user
   ${user}             Factory User
+
+  Set Suite Variable  ${user}
   
   Go To Signup Form
   Fill Signup Form    ${user}
   Submit Signup Form
   User Should Be Registered
+
+
+Duplicate User
+
+  Go To Signup Form
+  Fill Signup Form         ${user}
+  Submit Signup Form
+  Modal Content Should Be  Oops! Já temos um usuário com o e-mail informado.

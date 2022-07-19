@@ -25,3 +25,10 @@ User Should Be Registered
   ${expected_message}         Set Variable          css=p >> text=Agora você faz parte da Getgeeks. Tenha uma ótima experiência.
 
   Wait For Elements State     ${expected_message}   visible   5
+
+
+Modal Content Should Be
+  [Arguments]   ${expected_text}
+
+  Wait For Elements State     css=.swal2-html-container   visible   5
+  Get Text                    css=.swal2-html-container   equal     ${expected_text}
