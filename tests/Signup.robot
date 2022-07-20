@@ -23,4 +23,4 @@ Duplicate User
   Go To Signup Form
   Fill Signup Form         ${user}
   Submit Signup Form
-  Modal Content Should Be  Oops! Já temos um usuário com o e-mail informado.
+  Modal Content Should Be  Já temos um usuário com o e-mail informado.
