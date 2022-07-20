@@ -5,6 +5,8 @@ Library         Browser
 Library         factories/Users.py
 
 Resource        Actions.robot
+Resource        Database.robot
+Resource        Helpers.robot
 
 *Variables*
 ${BASE_URL}     https://getgeeks-matheus.herokuapp.com

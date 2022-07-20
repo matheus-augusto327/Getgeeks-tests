@@ -9,8 +9,6 @@ Test Teardown   Finish Session
 *Test Cases*
 Register a new user
   ${user}             Factory User
-
-  Set Suite Variable  ${user}
   
   Go To Signup Form
   Fill Signup Form    ${user}
@@ -19,6 +17,11 @@ Register a new user
 
 
 Duplicate User
+  [Tags]                   dup_email
+
+  ${user}                  Factory User
+  
+  Add User                 ${user}
 
   Go To Signup Form
   Fill Signup Form         ${user}
