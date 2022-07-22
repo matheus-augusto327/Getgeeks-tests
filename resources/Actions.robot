@@ -40,7 +40,7 @@ Modal Content Should Be
   Get Text                    ${content}   equal     ${expected_text}
 
 
-Filed Notification Should Be
+Field Notification Should Be
   [Arguments]   ${expected_notice}
 
   
