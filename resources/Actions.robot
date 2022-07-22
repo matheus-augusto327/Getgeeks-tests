@@ -38,3 +38,10 @@ Modal Content Should Be
 
   Wait For Elements State     ${content}   visible   5
   Get Text                    ${content}   equal     ${expected_text}
+
+
+Filed Notification Should Be
+  [Arguments]   ${expected_notice}
+
+  
+  Wait For Elements State     css=span[class=error] >> text=${expected_notice}    visible   5

@@ -11,19 +11,30 @@ Register a new user
   ${user}             Factory User
   
   Go To Signup Form
-  Fill Signup Form    ${user}
+  Fill Signup Form         ${user}
   Submit Signup Form
   User Should Be Registered
 
 
 Duplicate User
-  [Tags]                   dup_email
+  [Tags]                   attempt_signup
 
   ${user}                  Factory User
   
-  Add User                 ${user}
+  Add User From Database   ${user}
 
   Go To Signup Form
   Fill Signup Form         ${user}
   Submit Signup Form
   Modal Content Should Be  Já temos um usuário com o e-mail informado.
+
+
+Wrong Email
+  [Tags]                   attempt_signup
+
+  ${user}                  Factory Wrong Email
+
+  Go To Signup Form
+  Fill Signup Form         ${user}
+  Submit Signup Form
+  Filed Notification Should Be  O email está estranho
