@@ -37,15 +37,15 @@ Wrong Email
   Go To Signup Form
   Fill Signup Form         ${user}
   Submit Signup Form
-  Field Notification Should Be  O email está estranho
+  Alert Span Should Be  O email está estranho
 
 
 Required Fields
   [Tags]                   attempt_signup   reqf
 
   Go To Signup Form
-  Submit Signup
-  Field Notification Should Be  Cadê o seu nome?
-  Field Notification Should Be  E o sobrenome?
-  Field Notification Should Be  O email é importante também!
-  Field Notification Should Be  Agora só falta a senha!
+  Submit Signup Form
+  Alert Span Should Be  Cadê o seu nome?
+  Alert Span Should Be  E o sobrenome?
+  Alert Span Should Be  O email é importante também!
+  Alert Span Should Be  Agora só falta a senha!

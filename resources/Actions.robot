@@ -40,8 +40,8 @@ Modal Content Should Be
   Get Text                    ${content}   equal     ${expected_text}
 
 
-Field Notification Should Be
-  [Arguments]   ${expected_notice}
+Alert Span Should Be
+  [Arguments]   ${expected_alert}
 
   
-  Wait For Elements State     css=span[class=error] >> text=${expected_notice}    visible   5
+  Wait For Elements State     css=span[class=error] >> text=${expected_alert}    visible   5
