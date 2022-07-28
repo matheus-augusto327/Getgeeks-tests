@@ -1,5 +1,5 @@
 *Settings*
-Documentation   Ações do Sistema
+Documentation   Signup Actions
 
 *Keywords*
 Go To Signup Form
