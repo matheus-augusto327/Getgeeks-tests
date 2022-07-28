@@ -2,6 +2,7 @@
 Documentation   Base Test
 
 Library         Browser
+Library         Collections
 Library         factories/Users.py
 
 Resource        Actions.robot
@@ -13,7 +14,7 @@ ${BASE_URL}     https://getgeeks-matheus.herokuapp.com
 
 *Keywords*
 Start Session
-  New Browser   chromium    headless=false    slowMo=00:00:00.5
+  New Browser   chromium    headless=false    slowMo=00:00:01
   New Page      ${BASE_URL}
 
 
