@@ -27,3 +27,14 @@ Incorrect Pass
   Fill Credentials          ${user}
   Submit Credentials
   Modal Content Should Be   Usuário e/ou senha inválidos.
+
+
+User Not Found
+  [Tags]                    user_404
+
+  ${user}                   Create Dictionary   email=matheus@404.net  password=abc123
+
+  Go To Login Page
+  Fill Credentials          ${user}
+  Submit Credentials
+  Modal Content Should Be   Usuário e/ou senha inválidos.
