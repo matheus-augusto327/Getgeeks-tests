@@ -20,7 +20,6 @@ Duplicate User
   [Tags]                   attempt_signup
 
   ${user}                  Factory User
-  
   Add User From Database   ${user}
 
   Go To Signup Form

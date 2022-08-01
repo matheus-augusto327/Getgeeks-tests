@@ -2,6 +2,7 @@
 Documentation   Database Helpers
 
 Library         DatabaseLibrary
+Library         factories/Users.py
 
 *Keywords*
 Connect To Postgres
@@ -23,6 +24,8 @@ Reset Env
 Insert User
   [Arguments]           ${u}
 
-  ${q}                  Set Variable    INSERT INTO public.users (name, email, password_hash, is_geek) values ('${u}[name] ${u}[lastname]', '${u}[email]', '${u}[password]', false)
+  ${hashed_pass}        Get Hashed Pass  ${u}[password]
+
+  ${q}                  Set Variable     INSERT INTO public.users (name, email, password_hash, is_geek) values ('${u}[name] ${u}[lastname]', '${u}[email]', '${hashed_pass}', false)
 
   Execute SQL String    ${q}
