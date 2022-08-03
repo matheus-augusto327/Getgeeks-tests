@@ -32,3 +32,11 @@ def factory_user_login():
     'email': 'matheus@gmail.com',
     'password': 'ogelogel1'
   }
+
+def factory_user_be_geek():
+  return {
+    'name': 'Kim',
+    'lastname': 'Dotcom',
+    'email': 'matheus@gmail.com',
+    'password': 'ogelogel1'
+  }
