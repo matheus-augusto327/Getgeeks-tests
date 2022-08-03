@@ -9,8 +9,7 @@ Test Teardown       Finish Session
 *Test Cases*
 User Login
 
-  ${user}                   Factory User Login
-  Add User From Database    ${user}
+  ${user}                   Factory User  login
 
   Go To Login Page
   Fill Credentials          ${user}
@@ -79,4 +78,4 @@ Required Fields
 
   Go To Login Page
   Submit Credentials
-  Alert Spans Should Be      ${expected_alerts}
+  Alert Spans Should Be     ${expected_alerts}
