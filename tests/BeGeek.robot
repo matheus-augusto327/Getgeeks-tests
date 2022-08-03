@@ -11,7 +11,4 @@ Be a Geek
 
   ${user}                    Factory User Be Geek
 
-  Go To Login Page
-  Fill Credentials           ${user}
-  Submit Credentials
-  User Should Be Logged In   ${user}
+  Do Login                   ${user}
