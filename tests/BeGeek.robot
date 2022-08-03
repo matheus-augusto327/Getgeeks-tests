@@ -37,4 +37,4 @@ Long Description
   Go To Geek Form
   Fill Geek Form             ${user}[geek_profile]  
   Submit Geek Form  
-  Alert Span Should Be       A descrição deve ter no mínimo 80 caracteres
+  Alert Span Should Be       A descrição deve ter no máximo 255 caracteres
