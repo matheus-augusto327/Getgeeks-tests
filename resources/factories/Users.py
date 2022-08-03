@@ -38,5 +38,12 @@ def factory_user_be_geek():
     'name': 'Kim',
     'lastname': 'Dotcom',
     'email': 'matheus@gmail.com',
-    'password': 'ogelogel1'
+    'password': 'ogelogel1',
+    'geek_profile': {
+      'whats': '1199999999',
+      'desc': 'Lorem Ipsum',
+      'printer_repair': 'Sim',
+      'work': 'Remoto',
+      'cost': '100'
+    }
   }
