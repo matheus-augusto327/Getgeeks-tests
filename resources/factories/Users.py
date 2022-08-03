@@ -35,10 +35,23 @@ def factory_user(target):
       'password': 'ogelogel1',
       'geek_profile': {
         'whats': '1199999999',
-        'desc': 'Lorem Ipsum',
+        'desc': 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ',
         'printer_repair': 'Sim',
         'work': 'Remoto',
         'cost': '100'
+      }
+    },
+    'short_desc': {
+      'name': 'Peter',
+      'lastname': 'Jordam',
+      'email': 'lucao@gmail.com',
+      'password': 'ogelogel1',
+      'geek_profile': {
+        'whats': '1199899999',
+        'desc': 'Lorem Ipsum',
+        'printer_repair': 'Não',
+        'work': 'Ambos',
+        'cost': '200'
       }
     }
   }

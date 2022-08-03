@@ -24,4 +24,4 @@ Start Session
 
 
 Finish Session
-  Take Screenshot
+  Take Screenshot           fullPage=True
