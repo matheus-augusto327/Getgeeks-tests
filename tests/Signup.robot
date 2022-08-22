@@ -8,7 +8,9 @@ Test Teardown   Finish Session
 
 *Test Cases*
 Register a new user
-  ${user}             Factory User  faker
+  [Tags]                   smoke
+
+  ${user}                  Factory User  faker
   
   Go To Signup Form
   Fill Signup Form         ${user}
