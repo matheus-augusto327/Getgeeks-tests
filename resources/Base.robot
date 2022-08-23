@@ -19,7 +19,7 @@ ${BASE_URL}     https://getgeeks-matheus.herokuapp.com
 
 *Keywords*
 Start Session
-  New Browser        chromium     headless=false    slowMo=00:00:01
+  New Browser        ${BROWSER}     headless=${HEADLESS}    slowMo=00:00:01
   New Page           ${BASE_URL}
   Set Viewport Size  1280         768
 
