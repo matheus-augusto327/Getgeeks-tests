@@ -26,7 +26,7 @@ Incorrect Pass
   Go To Login Page
   Fill Credentials          ${user}
   Submit Credentials
-  Modal Content Should Be   Usuário e/ou senha inválidos.
+  Modal Content Should Be   Ocorreu um erro muito estranho!
 
 
 User Not Found
@@ -37,7 +37,7 @@ User Not Found
   Go To Login Page
   Fill Credentials          ${user}
   Submit Credentials
-  Modal Content Should Be   Usuário e/ou senha inválidos.
+  Modal Content Should Be   Ocorreu um erro muito estranho!
 
 
 Incorrect Email

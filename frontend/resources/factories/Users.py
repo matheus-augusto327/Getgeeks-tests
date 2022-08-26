@@ -29,12 +29,12 @@ def factory_user(target):
       'password': 'ogelogel1'
     },
     'be_geek': {
-      'name': 'Kim',
-      'lastname': 'Dotcom',
+      'name': 'Matheus',
+      'lastname': 'Augusto',
       'email': 'matheus@gmail.com',
       'password': 'ogelogel1',
       'geek_profile': {
-        'whats': '1199999999',
+        'whats': '11999999999',
         'desc': 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ',
         'printer_repair': 'Sim',
         'work': 'Remoto',

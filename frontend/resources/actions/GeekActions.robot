@@ -31,11 +31,11 @@ Submit Geek Form
   Click                      css=button >> text=Quero ser um Geek
 
 
-Geek Form Should Be Suscess
-  ${expected_message}        Set Variable  Seu cadastro está na nossa lista de geeks. Agora é só ficar de olho no seu WhatsApp.
+Geek Form Should Be Success
+    ${expected_message}     Set Variable        Seu cadastro está na nossa lista de geeks. Agora é só ficar de olho no seu WhatsApp.
 
-  Wait For Elements State    css=p >> text=${expected_message}   visible  5
+    Wait For Elements State     css=p >> text=${expected_message}       visible     5
 
 
 Reset Geek Form
-  Execute Javascript         document.getElementsByClassName("be-geek-form")[0].reset();
+    Execute Javascript      document.getElementsByClassName("be-geek-form")[0].reset();
