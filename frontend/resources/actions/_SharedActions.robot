@@ -15,7 +15,7 @@ Modal Content Should Be
   Get Text                    ${content}   equal     ${expected_text}
 
 
-  Alert Spans Should Be
+Alert Spans Should Be
   [Arguments]     ${expected_alerts}
 
   @{got_alerts}   Create List
