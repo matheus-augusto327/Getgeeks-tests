@@ -2,6 +2,7 @@
 Documentation           Base test
 
 Library                 Request Library
+Library                 factories/Users.py
 
 Resource                routes/SessionRoute.robot
 Resource                routes/UsersRoute.robot
