@@ -2,13 +2,28 @@
 Documentation          Helpers
 
 *Keywords*
+Get Token
+  [Arguments]          ${user}
+
+  ${payload}          Create Dictionary  
+  ...                 email=${user}[email]  
+  ...                 password=${user}[password]
+
+  ${response}         POST Session       ${payload}
+  ${result}           Set Variable       ${EMPTY}
+
+  IF                  "200"              in    "${response}"
+    ${result}         Set Variable       Bearer ${response.json()}[token]
+  END
+
+  [return]            ${result}
+
+
 Remove User
   [Arguments]          ${user}
 
-  ${payload}          Create Dictionary  email=${user}[email]  password=${user}[password]
-  ${response}         POST Session       ${payload}
+  ${token}             Get Token         ${user}
 
-  IF                  "200"              in    "${response}"
-    ${token}          Set Variable       Bearer ${response.json()}[token]
+  IF                  "${token}"    
     DELETE User       ${token}
   END
