@@ -11,5 +11,5 @@ Resource    routes/GeeksRoute.robot
 Resource    Helpers.robot
 
 *Variables*
-${API_USERS}        https://getgeeks-users-matheus.herokuapp.com
-${API_GEEKS}        https://getgeeks-geeks-matheus.herokuapp.com
+${API_USERS}        https://getgeeks-users-papito.herokuapp.com
+${API_GEEKS}        https://getgeeks-geeks-papito.herokuapp.com
