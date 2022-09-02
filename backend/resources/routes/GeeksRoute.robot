@@ -1,29 +1,29 @@
 *Settings*
-Documentation        Geeks route
+Documentation           Geeks route
+
 
 *Keywords*
 POST Geek
-  [Arguments]        ${payload}
+    [Arguments]     ${token}        ${payload}
 
-  ${headers}         Create Dictionary  Authorization=${token}
+    ${headers}      Create Dictionary       Authorization=${token}
 
-  ${response}        POST   
-  ...                ${API_GEEKS}/geeks   
-  ...                json=${payload} 
-  ...                headers=${headers} 
-  ...                expected_status=any
+    ${response}     POST
+    ...             ${API_GEEKS}/geeks
+    ...             json=${payload}
+    ...             headers=${headers}
+    ...             expected_status=any
 
-  [return]           ${response}
-
+    [return]  ${response}
 
 GET Geeks
-  [Arguments]        ${payload}
+    [Arguments]     ${token}
 
-  ${headers}         Create Dictionary  Authorization=${token}
+    ${headers}      Create Dictionary       Authorization=${token}
 
-  ${response}        GET   
-  ...                ${API_GEEKS}/geeks 
-  ...                headers=${headers} 
-  ...                expected_status=any
+    ${response}     GET
+    ...             ${API_GEEKS}/geeks
+    ...             headers=${headers}
+    ...             expected_status=any
 
-  [return]           ${response}
+    [return]  ${response}

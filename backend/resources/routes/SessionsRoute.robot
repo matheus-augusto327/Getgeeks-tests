@@ -1,13 +1,14 @@
 *Settings*
-Documentation        Sessions route
+Documentation           Sessions route
+
 
 *Keywords*
 POST Session
-  [Arguments]        ${payload}
+    [Arguments]     ${payload}
 
-  ${response}        POST   
-  ...                ${API_USERS}/sessions   
-  ...                json=${payload}  
-  ...                expected_status=any
+    ${response}     POST
+    ...             ${API_USERS}/sessions
+    ...             json=${payload}
+    ...             expected_status=any
 
-  [return]           ${response}
+    [return]  ${response}
