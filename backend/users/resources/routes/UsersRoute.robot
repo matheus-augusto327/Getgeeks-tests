@@ -36,3 +36,17 @@ GET User
   ...                expected_status=any
 
   [return]           ${response}
+
+
+PUT User
+  [Arguments]        ${token}               ${payload}
+
+  ${headers}         Create Dictionary      Authorization=${token}
+
+  ${response}        PUT   
+  ...                ${API_USERS}/users   
+  ...                json=${payload} 
+  ...                headers=${headers} 
+  ...                expected_status=any
+
+  [return]           ${response}
