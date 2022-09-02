@@ -54,3 +54,17 @@ def factory_user_session(target):
   }
 
   return data[target]
+
+def factory_be_geek(): 
+  return {
+    'name': 'João Lucas',
+    'email': 'joao@qaninja.com.br',
+    'password': 'pwd123',
+    'geek_profile': {
+      'whatsapp': "11999999999",
+      'desc': 'Seu computador está lento? Reiniciando do nada? Talvez seja um vírus, ou algum hardware com defeito. Posso fazer a manutenção para você!',
+      'printer_repair': 'Sim',
+      'work': 'Presencial',
+      'cost': 100
+    }
+  }
