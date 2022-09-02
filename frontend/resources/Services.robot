@@ -4,7 +4,7 @@ Documentation           Services API
 Library         RequestsLibrary
 
 *Variables*
-${API_GATEWAY}      https://getgeeks-gateway-matheus.herokuapp.com
+${API_GATEWAY}      https://getgeeks-gateway-papito.herokuapp.com
 
 
 *Keywords*
